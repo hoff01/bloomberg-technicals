@@ -1,0 +1,5 @@
+# Install from Bloomberg's official index:
+# https://blpapi.bloomberg.com/repository/releases/python/simple
+# Bloomberg's wheel supplies the licensed C++ SDK runtime used by XBBG when
+# the Terminal's DAPI installation is not discovered automatically.
+blpapi>=3.25,<4

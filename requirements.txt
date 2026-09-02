@@ -1,0 +1,10 @@
+# Compatibility floor retained for the legacy builder: polars>=1.38,<2
+polars==1.44.1
+pyarrow==19.0.1
+numpy==2.5.2
+openpyxl==3.1.5
+reportlab==5.0.1
+pypdf==6.16.2
+tzdata==2026.3
+polars-talis==0.1.0
+xbbg[polars]==1.4.6

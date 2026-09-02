@@ -1,0 +1,28 @@
+BLOOMBERG TECHNICAL SYSTEM - WINDOWS START HERE
+================================================
+
+1. Extract the ZIP to a normal local folder.
+2. Keep Bloomberg Terminal open and logged in.
+3. Run SETUP_AND_CHECK_BLOOMBERG.bat once. It installs the managed Python
+   environment and then performs live BDP, BDH, BDIB, and subscription checks.
+4. Provide a licensed 18-month intraday backfill containing at least 300
+   complete sessions, then run:
+     TRAIN_AND_SCORE.bat "D:\licensed_data\intraday_backfill.parquet"
+   Run training after 14:45 New York time. Use SCORE_CURRENT.bat intraday.
+5. Use SCORE_CURRENT.bat or UPDATE_TECHNICALS_AND_OPEN.bat for routine scoring.
+   Every successful train or score refreshes:
+     output\pdf\Technical_Product_Report.pdf
+     output\csv\Technical_Trade_Levels.csv
+   The PDF is split into HO, CL, CO, and QS product chapters.
+
+The managed environment is:
+  %USERPROFILE%\Pyenvs\bbg_technical_builder
+
+RUN_TECHNICAL_DEMO.bat is the Bloomberg-free end-to-end proof.
+OPEN_TECHNICAL_RESULTS.bat only opens already-created results.
+EXPORT_TECHNICAL_PDF.bat rebuilds only the PDF from validated current outputs.
+UPDATE_AND_OPEN.bat and UPDATE_AND_EXPORT.bat are legacy Pricing Dashboard
+launchers; they are not part of the technical model workflow.
+
+Do not treat synthetic demo results as live prices or recommendations. The live
+preflight cannot replace Terminal entitlements or a licensed history backfill.

@@ -1,0 +1,141 @@
+spread_id,leg_order,root,selection_mode,delivery_offset,rank,sign,contracts,price_weight,description
+HO1_CL1,1,HO,delivery,0,1,1,1,1,Long HO product
+HO1_CL1,2,CL,delivery,0,1,-1,1,1,Short same-delivery WTI
+HO2_CL2,1,HO,delivery,0,2,1,1,1,Long HO second package
+HO2_CL2,2,CL,delivery,0,2,-1,1,1,Short same-delivery WTI
+HO1_CO2,1,HO,delivery,0,1,1,1,1,Long HO product
+HO1_CO2,2,CO,delivery,1,2,-1,1,1,Short Brent next calendar month
+HO2_CO3,1,HO,delivery,0,2,1,1,1,Long HO second package
+HO2_CO3,2,CO,delivery,1,3,-1,1,1,Short Brent next calendar month
+HO1_CO1,1,HO,delivery,0,1,1,1,1,Long HO product
+HO1_CO1,2,CO,delivery,0,1,-1,1,1,Short same-delivery Brent
+QS1_CO1,1,QS,delivery,0,1,1,4,1,Long four gasoil lots
+QS1_CO1,2,CO,delivery,0,1,-1,3,1,Short three Brent lots
+QS2_CO2,1,QS,delivery,0,2,1,4,1,Long four gasoil lots
+QS2_CO2,2,CO,delivery,0,2,-1,3,1,Short three Brent lots
+QS1_CO2,1,QS,delivery,0,1,1,4,1,Long four gasoil lots
+QS1_CO2,2,CO,delivery,1,2,-1,3,1,Short three next-month Brent lots
+QS1_CL1,1,QS,delivery,0,1,1,4,1,Long four gasoil lots
+QS1_CL1,2,CL,delivery,0,1,-1,3,1,Short three WTI lots
+QS2_CL2,1,QS,delivery,0,2,1,4,1,Long four gasoil lots
+QS2_CL2,2,CL,delivery,0,2,-1,3,1,Short three WTI lots
+HO1_HO2,1,HO,delivery,0,1,1,1,1,Long nearby HO
+HO1_HO2,2,HO,delivery,1,2,-1,1,1,Short next-month HO
+QS1_QS2,1,QS,delivery,0,1,1,1,1,Long nearby QS
+QS1_QS2,2,QS,delivery,1,2,-1,1,1,Short next-month QS
+CL1_CL2,1,CL,delivery,0,1,1,1,1,Long nearby WTI
+CL1_CL2,2,CL,delivery,1,2,-1,1,1,Short next-month WTI
+CO1_CO2,1,CO,delivery,0,1,1,1,1,Long nearby Brent
+CO1_CO2,2,CO,delivery,1,2,-1,1,1,Short next-month Brent
+HOGO1,1,HO,delivery,0,1,1,3,1,Long three HO lots
+HOGO1,2,QS,delivery,0,1,-1,4,1,Short four QS lots
+REL_MARGIN1,1,HO,delivery,0,1,1,3,1,Long three HO lots
+REL_MARGIN1,2,CL,delivery,0,1,-1,3,1,Short three WTI lots
+REL_MARGIN1,3,QS,delivery,0,1,-1,4,1,Short four QS lots
+REL_MARGIN1,4,CO,delivery,0,1,1,3,1,Long three Brent lots
+HO_FLY_123,1,HO,delivery,0,1,1,1,1,Long HO M1
+HO_FLY_123,2,HO,delivery,1,2,-1,2,2,Short two HO M2
+HO_FLY_123,3,HO,delivery,2,3,1,1,1,Long HO M3
+QS_FLY_123,1,QS,delivery,0,1,1,1,1,Long QS M1
+QS_FLY_123,2,QS,delivery,1,2,-1,2,2,Short two QS M2
+QS_FLY_123,3,QS,delivery,2,3,1,1,1,Long QS M3
+CL_FLY_123,1,CL,delivery,0,1,1,1,1,Long CL M1
+CL_FLY_123,2,CL,delivery,1,2,-1,2,2,Short two CL M2
+CL_FLY_123,3,CL,delivery,2,3,1,1,1,Long CL M3
+CO_FLY_123,1,CO,delivery,0,1,1,1,1,Long CO M1
+CO_FLY_123,2,CO,delivery,1,2,-1,2,2,Short two CO M2
+CO_FLY_123,3,CO,delivery,2,3,1,1,1,Long CO M3
+HO_CONDOR_1234,1,HO,delivery,0,1,1,1,1,Long HO M1
+HO_CONDOR_1234,2,HO,delivery,1,2,-1,1,1,Short HO M2
+HO_CONDOR_1234,3,HO,delivery,2,3,-1,1,1,Short HO M3
+HO_CONDOR_1234,4,HO,delivery,3,4,1,1,1,Long HO M4
+QS_CONDOR_1234,1,QS,delivery,0,1,1,1,1,Long QS M1
+QS_CONDOR_1234,2,QS,delivery,1,2,-1,1,1,Short QS M2
+QS_CONDOR_1234,3,QS,delivery,2,3,-1,1,1,Short QS M3
+QS_CONDOR_1234,4,QS,delivery,3,4,1,1,1,Long QS M4
+CL_CONDOR_1234,1,CL,delivery,0,1,1,1,1,Long CL M1
+CL_CONDOR_1234,2,CL,delivery,1,2,-1,1,1,Short CL M2
+CL_CONDOR_1234,3,CL,delivery,2,3,-1,1,1,Short CL M3
+CL_CONDOR_1234,4,CL,delivery,3,4,1,1,1,Long CL M4
+CO_CONDOR_1234,1,CO,delivery,0,1,1,1,1,Long CO M1
+CO_CONDOR_1234,2,CO,delivery,1,2,-1,1,1,Short CO M2
+CO_CONDOR_1234,3,CO,delivery,2,3,-1,1,1,Short CO M3
+CO_CONDOR_1234,4,CO,delivery,3,4,1,1,1,Long CO M4
+HO_WTI_CRACK_CAL,1,HO,delivery,0,1,1,1,1,Long HO M1 crack product
+HO_WTI_CRACK_CAL,2,CL,delivery,0,1,-1,1,1,Short CL M1 crack crude
+HO_WTI_CRACK_CAL,3,HO,delivery,1,2,-1,1,1,Short HO M2 crack product
+HO_WTI_CRACK_CAL,4,CL,delivery,1,2,1,1,1,Long CL M2 crack crude
+HO_BRENT_CRACK_CAL,1,HO,delivery,0,1,1,1,1,Long HO M1
+HO_BRENT_CRACK_CAL,2,CO,delivery,1,2,-1,1,1,Short Brent M2
+HO_BRENT_CRACK_CAL,3,HO,delivery,1,2,-1,1,1,Short HO M2
+HO_BRENT_CRACK_CAL,4,CO,delivery,2,3,1,1,1,Long Brent M3
+QS_BRENT_CRACK_CAL,1,QS,delivery,0,1,1,4,1,Long four QS M1
+QS_BRENT_CRACK_CAL,2,CO,delivery,0,1,-1,3,1,Short three CO M1
+QS_BRENT_CRACK_CAL,3,QS,delivery,1,2,-1,4,1,Short four QS M2
+QS_BRENT_CRACK_CAL,4,CO,delivery,1,2,1,3,1,Long three CO M2
+QS_WTI_CRACK_CAL,1,QS,delivery,0,1,1,4,1,Long four QS M1
+QS_WTI_CRACK_CAL,2,CL,delivery,0,1,-1,3,1,Short three CL M1
+QS_WTI_CRACK_CAL,3,QS,delivery,1,2,-1,4,1,Short four QS M2
+QS_WTI_CRACK_CAL,4,CL,delivery,1,2,1,3,1,Long three CL M2
+HO_WTI_CRACK_FLY,1,HO,delivery,0,1,1,1,1,Long HO M1
+HO_WTI_CRACK_FLY,2,CL,delivery,0,1,-1,1,1,Short CL M1
+HO_WTI_CRACK_FLY,3,HO,delivery,1,2,-1,2,2,Short two HO M2
+HO_WTI_CRACK_FLY,4,CL,delivery,1,2,1,2,2,Long two CL M2
+HO_WTI_CRACK_FLY,5,HO,delivery,2,3,1,1,1,Long HO M3
+HO_WTI_CRACK_FLY,6,CL,delivery,2,3,-1,1,1,Short CL M3
+QS_BRENT_CRACK_FLY,1,QS,delivery,0,1,1,4,1,Long four QS M1
+QS_BRENT_CRACK_FLY,2,CO,delivery,0,1,-1,3,1,Short three CO M1
+QS_BRENT_CRACK_FLY,3,QS,delivery,1,2,-1,8,2,Short eight QS M2
+QS_BRENT_CRACK_FLY,4,CO,delivery,1,2,1,6,2,Long six CO M2
+QS_BRENT_CRACK_FLY,5,QS,delivery,2,3,1,4,1,Long four QS M3
+QS_BRENT_CRACK_FLY,6,CO,delivery,2,3,-1,3,1,Short three CO M3
+HO_WTI_CRACK_CONDOR,1,HO,delivery,0,1,1,1,1,Long HO M1
+HO_WTI_CRACK_CONDOR,2,CL,delivery,0,1,-1,1,1,Short CL M1
+HO_WTI_CRACK_CONDOR,3,HO,delivery,1,2,-1,1,1,Short HO M2
+HO_WTI_CRACK_CONDOR,4,CL,delivery,1,2,1,1,1,Long CL M2
+HO_WTI_CRACK_CONDOR,5,HO,delivery,2,3,-1,1,1,Short HO M3
+HO_WTI_CRACK_CONDOR,6,CL,delivery,2,3,1,1,1,Long CL M3
+HO_WTI_CRACK_CONDOR,7,HO,delivery,3,4,1,1,1,Long HO M4
+HO_WTI_CRACK_CONDOR,8,CL,delivery,3,4,-1,1,1,Short CL M4
+QS_BRENT_CRACK_CONDOR,1,QS,delivery,0,1,1,4,1,Long four QS M1
+QS_BRENT_CRACK_CONDOR,2,CO,delivery,0,1,-1,3,1,Short three CO M1
+QS_BRENT_CRACK_CONDOR,3,QS,delivery,1,2,-1,4,1,Short four QS M2
+QS_BRENT_CRACK_CONDOR,4,CO,delivery,1,2,1,3,1,Long three CO M2
+QS_BRENT_CRACK_CONDOR,5,QS,delivery,2,3,-1,4,1,Short four QS M3
+QS_BRENT_CRACK_CONDOR,6,CO,delivery,2,3,1,3,1,Long three CO M3
+QS_BRENT_CRACK_CONDOR,7,QS,delivery,3,4,1,4,1,Long four QS M4
+QS_BRENT_CRACK_CONDOR,8,CO,delivery,3,4,-1,3,1,Short three CO M4
+HOGO_CAL_BOX,1,HO,delivery,0,1,1,3,1,Long three HO M1
+HOGO_CAL_BOX,2,HO,delivery,1,2,-1,3,1,Short three HO M2
+HOGO_CAL_BOX,3,QS,delivery,0,1,-1,4,1,Short four QS M1
+HOGO_CAL_BOX,4,QS,delivery,1,2,1,4,1,Long four QS M2
+CRUDE_BASIS_BOX,1,CO,delivery,0,1,1,1,1,Long CO M1
+CRUDE_BASIS_BOX,2,CO,delivery,1,2,-1,1,1,Short CO M2
+CRUDE_BASIS_BOX,3,CL,delivery,0,1,-1,1,1,Short CL M1
+CRUDE_BASIS_BOX,4,CL,delivery,1,2,1,1,1,Long CL M2
+REL_CRACK_CURVE_BOX,1,HO,delivery,0,1,1,3,1,Long three HO M1
+REL_CRACK_CURVE_BOX,2,CL,delivery,0,1,-1,3,1,Short three CL M1
+REL_CRACK_CURVE_BOX,3,HO,delivery,1,2,-1,3,1,Short three HO M2
+REL_CRACK_CURVE_BOX,4,CL,delivery,1,2,1,3,1,Long three CL M2
+REL_CRACK_CURVE_BOX,5,QS,delivery,0,1,-1,4,1,Short four QS M1
+REL_CRACK_CURVE_BOX,6,CO,delivery,0,1,1,3,1,Long three CO M1
+REL_CRACK_CURVE_BOX,7,QS,delivery,1,2,1,4,1,Long four QS M2
+REL_CRACK_CURVE_BOX,8,CO,delivery,1,2,-1,3,1,Short three CO M2
+HOGO_FLY_BOX,1,HO,delivery,0,1,1,3,1,Long three HO M1
+HOGO_FLY_BOX,2,HO,delivery,1,2,-1,6,2,Short six HO M2
+HOGO_FLY_BOX,3,HO,delivery,2,3,1,3,1,Long three HO M3
+HOGO_FLY_BOX,4,QS,delivery,0,1,-1,4,1,Short four QS M1
+HOGO_FLY_BOX,5,QS,delivery,1,2,1,8,2,Long eight QS M2
+HOGO_FLY_BOX,6,QS,delivery,2,3,-1,4,1,Short four QS M3
+HO_BRENT_VS_QS_BRENT,1,HO,delivery,0,1,1,3,1,Long three HO M1
+HO_BRENT_VS_QS_BRENT,2,CO,delivery,0,1,-1,3,1,Short three CO M1 first crack
+HO_BRENT_VS_QS_BRENT,3,QS,delivery,0,1,-1,4,1,Short four QS M1
+HO_BRENT_VS_QS_BRENT,4,CO,delivery,0,1,1,3,1,Long three CO M1 second crack
+HO_WTI_VS_HO_BRENT,1,HO,delivery,0,1,1,1,1,Long HO M1 first crack
+HO_WTI_VS_HO_BRENT,2,CL,delivery,0,1,-1,1,1,Short CL M1
+HO_WTI_VS_HO_BRENT,3,HO,delivery,0,1,-1,1,1,Short HO M1 second crack
+HO_WTI_VS_HO_BRENT,4,CO,delivery,0,1,1,1,1,Long CO M1
+QS_BRENT_VS_QS_WTI,1,QS,delivery,0,1,1,4,1,Long QS M1 first crack
+QS_BRENT_VS_QS_WTI,2,CO,delivery,0,1,-1,3,1,Short CO M1
+QS_BRENT_VS_QS_WTI,3,QS,delivery,0,1,-1,4,1,Short QS M1 second crack
+QS_BRENT_VS_QS_WTI,4,CL,delivery,0,1,1,3,1,Long CL M1

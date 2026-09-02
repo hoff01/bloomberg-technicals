@@ -1,0 +1,21 @@
+[kronos]
+enabled = false
+action_enabled = false
+model_id = "NeoQuasar/Kronos-base"
+model_revision = "2b554741eca47781b64468546e77fef3e85130e6"
+tokenizer_id = "NeoQuasar/Kronos-Tokenizer-base"
+tokenizer_revision = "0e0117387f39004a9016484a186a908917e22426"
+max_context = 512
+lookback_bars = 260
+prediction_bars = 1
+sample_count = 1
+temperature = 0.8
+top_p = 0.9
+batch_size = 4
+cpu_threads = 4
+minimum_evaluation_sessions = 30
+
+# Kronos is an optional diagnostic until its own strictly forward predictions
+# have accumulated through at least 30 untouched sessions. It never fabricates
+# spread OHLC: forecasts are made on real contract bars and recombined by the
+# registered package price weights.

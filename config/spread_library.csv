@@ -1,0 +1,40 @@
+spread_id,enabled,display_name,family,anchor_root,anchor_rank,unit,core,model_enabled,complexity_tier,algebra_group,notes
+HO1_CL1,TRUE,HO M1 / WTI Same-Month Crack,Crack,HO,1,USD/bbl,TRUE,TRUE,1,HO_WTI_M1,Primary US distillate crack
+HO2_CL2,TRUE,HO M2 / WTI Same-Month Crack,Crack,HO,2,USD/bbl,TRUE,TRUE,1,HO_WTI_M2,Second executable package cohort
+HO1_CO2,TRUE,HO M1 / Brent M+1 Crack,Crack,HO,1,USD/bbl,TRUE,TRUE,1,HO_BRENT_EXP_M1,Expiry-aligned HO-Brent structure requested
+HO2_CO3,TRUE,HO M2 / Brent M+1 Crack,Crack,HO,2,USD/bbl,TRUE,TRUE,1,HO_BRENT_EXP_M2,Deferred expiry-aligned HO-Brent
+HO1_CO1,TRUE,HO M1 / Brent Same-Month Crack,Crack,HO,1,USD/bbl,FALSE,TRUE,1,HO_BRENT_M1,Economic-month comparator; may roll early
+QS1_CO1,TRUE,QS M1 / Brent Same-Month Crack,Crack,QS,1,USD/bbl,TRUE,TRUE,1,QS_BRENT_M1,ICE gasoil-Brent economic crack
+QS2_CO2,TRUE,QS M2 / Brent Same-Month Crack,Crack,QS,2,USD/bbl,TRUE,TRUE,1,QS_BRENT_M2,Second executable package cohort
+QS1_CO2,TRUE,QS M1 / Brent M+1 Crack,Crack,QS,1,USD/bbl,TRUE,TRUE,1,QS_BRENT_NEXT,Expiry-aligned sensitivity
+QS1_CL1,TRUE,QS M1 / WTI Same-Month Crack,Crack,QS,1,USD/bbl,TRUE,TRUE,1,QS_WTI_M1,Transatlantic crude benchmark comparison
+QS2_CL2,TRUE,QS M2 / WTI Same-Month Crack,Crack,QS,2,USD/bbl,TRUE,TRUE,1,QS_WTI_M2,Deferred comparison
+HO1_HO2,TRUE,HO M1-M2 Calendar,Calendar,HO,1,USD/bbl,TRUE,TRUE,1,HO_CAL_12,Positive means backwardation
+QS1_QS2,TRUE,QS M1-M2 Calendar,Calendar,QS,1,USD/bbl,TRUE,TRUE,1,QS_CAL_12,Positive means backwardation
+CL1_CL2,TRUE,WTI M1-M2 Calendar,Calendar,CL,1,USD/bbl,FALSE,TRUE,1,CL_CAL_12,Crude curve regime feature
+CO1_CO2,TRUE,Brent M1-M2 Calendar,Calendar,CO,1,USD/bbl,FALSE,TRUE,1,CO_CAL_12,Crude curve regime feature
+HOGO1,TRUE,HO M1 - QS M1,HOGO,HO,1,USD/bbl,TRUE,TRUE,1,HOGO_M1,US versus European distillate basis
+REL_MARGIN1,TRUE,HO/WTI less QS/Brent,Relative Margin,HO,1,USD/bbl,TRUE,TRUE,2,REL_MARGIN_M1,Relative US-Europe refining margin
+HO_FLY_123,TRUE,HO M1-M2-M3 Fly,Fly,HO,1,USD/bbl,TRUE,TRUE,2,HO_FLY_123,Front HO curvature +1 -2 +1
+QS_FLY_123,TRUE,QS M1-M2-M3 Fly,Fly,QS,1,USD/bbl,TRUE,TRUE,2,QS_FLY_123,Front gasoil curvature +1 -2 +1
+CL_FLY_123,TRUE,WTI M1-M2-M3 Fly,Fly,CL,1,USD/bbl,FALSE,TRUE,2,CL_FLY_123,WTI curve curvature
+CO_FLY_123,TRUE,Brent M1-M2-M3 Fly,Fly,CO,1,USD/bbl,FALSE,TRUE,2,CO_FLY_123,Brent curve curvature
+HO_CONDOR_1234,TRUE,HO M1-M2-M3-M4 Condor,Condor,HO,1,USD/bbl,TRUE,TRUE,3,HO_CONDOR_1234,Equal-wing calendar condor +1 -1 -1 +1
+QS_CONDOR_1234,TRUE,QS M1-M2-M3-M4 Condor,Condor,QS,1,USD/bbl,TRUE,TRUE,3,QS_CONDOR_1234,Equal-wing calendar condor +1 -1 -1 +1
+CL_CONDOR_1234,TRUE,WTI M1-M2-M3-M4 Condor,Condor,CL,1,USD/bbl,FALSE,TRUE,3,CL_CONDOR_1234,WTI curve condor
+CO_CONDOR_1234,TRUE,Brent M1-M2-M3-M4 Condor,Condor,CO,1,USD/bbl,FALSE,TRUE,3,CO_CONDOR_1234,Brent curve condor
+HO_WTI_CRACK_CAL,TRUE,HO/WTI Crack M1-M2 Calendar,Crack Curve,HO,1,USD/bbl,TRUE,TRUE,2,HO_WTI_CRACK_CAL,Front crack slope
+HO_BRENT_CRACK_CAL,TRUE,HO/Brent Expiry Crack M1-M2 Calendar,Crack Curve,HO,1,USD/bbl,TRUE,TRUE,2,HO_BRENT_CRACK_CAL,Expiry-aligned crack slope
+QS_BRENT_CRACK_CAL,TRUE,QS/Brent Crack M1-M2 Calendar,Crack Curve,QS,1,USD/bbl,TRUE,TRUE,2,QS_BRENT_CRACK_CAL,ICE crack slope using 4x3 packages
+QS_WTI_CRACK_CAL,TRUE,QS/WTI Crack M1-M2 Calendar,Crack Curve,QS,1,USD/bbl,TRUE,TRUE,2,QS_WTI_CRACK_CAL,Transatlantic crack slope
+HO_WTI_CRACK_FLY,TRUE,HO/WTI Crack M1-M2-M3 Fly,Crack Fly,HO,1,USD/bbl,TRUE,TRUE,3,HO_WTI_CRACK_FLY,Second difference of same-month HO/WTI cracks
+QS_BRENT_CRACK_FLY,TRUE,QS/Brent Crack M1-M2-M3 Fly,Crack Fly,QS,1,USD/bbl,TRUE,TRUE,3,QS_BRENT_CRACK_FLY,Second difference of ICE crack packages
+HO_WTI_CRACK_CONDOR,TRUE,HO/WTI Crack M1-M4 Condor,Crack Condor,HO,1,USD/bbl,FALSE,FALSE,4,HO_WTI_CRACK_CONDOR,Displayed for diagnostics; insufficient independent roll cycles for selection
+QS_BRENT_CRACK_CONDOR,TRUE,QS/Brent Crack M1-M4 Condor,Crack Condor,QS,1,USD/bbl,FALSE,FALSE,4,QS_BRENT_CRACK_CONDOR,Displayed for diagnostics; insufficient independent roll cycles for selection
+HOGO_CAL_BOX,TRUE,HOGO M1-M2 Calendar Box,Box,HO,1,USD/bbl,TRUE,TRUE,2,HOGO_CAL_BOX,HO calendar versus QS calendar on barrel-neutral packages
+CRUDE_BASIS_BOX,TRUE,Brent/WTI M1-M2 Calendar Box,Box,CO,1,USD/bbl,FALSE,TRUE,2,CRUDE_BASIS_BOX,Relative Brent and WTI curve slope
+REL_CRACK_CURVE_BOX,TRUE,US-Europe Crack Curve Box,Relative Box,HO,1,USD/bbl,TRUE,FALSE,4,REL_CRACK_CURVE_BOX,Eight-leg relative crack calendar diagnostic; display only
+HOGO_FLY_BOX,TRUE,HO-QS Relative Fly Box,HOGO Fly,HO,1,USD/bbl,TRUE,TRUE,3,HOGO_FLY_BOX,Six-leg HOGO curvature with higher OOS trade hurdle
+HO_BRENT_VS_QS_BRENT,TRUE,HO/Brent less QS/Brent Identity,Identity,HO,1,USD/bbl,FALSE,FALSE,4,HOGO_M1,Algebraically HOGO; display only and excluded from independent trials
+HO_WTI_VS_HO_BRENT,TRUE,HO/WTI less HO/Brent Identity,Identity,HO,1,USD/bbl,FALSE,FALSE,4,CRUDE_BASIS_M1,Algebraically Brent-WTI; display only
+QS_BRENT_VS_QS_WTI,TRUE,QS/Brent less QS/WTI Identity,Identity,QS,1,USD/bbl,FALSE,FALSE,4,CRUDE_BASIS_M1,Algebraically WTI-Brent; display only

@@ -1,0 +1,168 @@
+[system]
+project_name = "Bloomberg Distillate Technical Trading System"
+model_version = "4.0.0"
+timezone = "America/New_York"
+session_start = "08:00"
+session_end = "14:30"
+bar_interval_minutes = 15
+complete_bars_per_session = 26
+rolling_intraday_months = 18
+daily_history_start = "2022-01-01"
+forward_curve_months = 16
+expiry_flat_sessions = 3
+pull_overlap_days = 5
+pull_chunk_days = 28
+max_concurrent_requests = 2
+minimum_preliminary_sessions = 120
+minimum_production_sessions = 300
+output_history_sessions = 30
+maximum_model_age_sessions = 5
+open_browser = true
+
+[bloomberg]
+host = "localhost"
+port = 8194
+request_pool_size = 2
+request_timeout_seconds = 120
+heartbeat_seconds = 5
+retry_max_retries = 1
+maximum_trade_failure_rate = 0.05
+freshness_grace_minutes = 15
+event_type = "TRADE"
+pull_bid_ask_bars = true
+gap_fill_initial_bar = false
+intraday_retention_warning_days = 160
+reference_fields = [
+  "FUT_CONTRACT_DATE",
+  "FUT_LAST_TRADE_DT",
+  "LAST_TRADEABLE_DT",
+  "FUT_NOTICE_FIRST",
+  "FUT_DLV_DT_FIRST",
+  "FUT_DLV_DT_LAST",
+  "FUT_CONT_SIZE",
+  "FUT_TICK_SIZE",
+  "CRNCY",
+]
+daily_fields = ["PX_SETTLE", "PX_LAST", "PX_VOLUME", "FUT_AGGTE_OPEN_INT"]
+
+[liquidity]
+capture_seconds = 12
+depth_mode = "auto"
+top_of_book_fields = ["BID", "ASK", "BID_SIZE", "ASK_SIZE", "LAST_PRICE", "VOLUME"]
+depth_snapshot_max_age_minutes = 15
+minimum_relative_volume = 0.35
+maximum_bid_ask_ticks = 8.0
+minimum_leg_alignment = 0.95
+minimum_volume_coverage = 0.90
+maximum_volume_participation = 0.01
+require_true_l2_for_enter = false
+cap_confidence_without_depth = 0.75
+
+[backtest]
+parallel_workers = 2
+train_sessions = 180
+validation_sessions = 30
+test_sessions = 15
+lockbox_sessions = 30
+embargo_sessions = 5
+maximum_holding_bars = 78
+minimum_oos_trades = 20
+minimum_profitable_fold_share = 0.60
+minimum_profit_factor = 1.10
+minimum_probability_sharpe = 0.95
+minimum_confidence = 0.58
+annual_sessions = 252
+execution_lag_bars = 1
+allow_overnight = true
+risk_target_usd = 25000.0
+bootstrap_samples = 250
+adaptive_horizon_bars = 26
+adaptive_min_observations = 60
+adaptive_learning_rate = 0.20
+adaptive_uniform_shrinkage = 0.08
+adaptive_max_expert_weight = 0.35
+adaptive_entry_threshold = 0.34
+adaptive_freeze_lockbox = true
+maximum_new_trades_per_session = 3
+one_trade_per_algebra_group = true
+
+[indicators]
+half_session = 13
+one_session = 26
+three_sessions = 78
+five_sessions = 130
+ten_sessions = 260
+twenty_sessions = 520
+robust_z_window = 130
+bollinger_window = 78
+rsi_window = 26
+macd_fast = 26
+macd_slow = 78
+macd_signal = 26
+donchian_window = 78
+volume_seasonality_sessions = 20
+seasonality_min_prior_years = 2
+advanced_window = 520
+entropy_window = 130
+variance_ratio_lag = 10
+hurst_lag = 26
+crossing_window = 130
+cusum_window = 26
+seasonality_window_days = 14
+expiry_seasonality_window_sessions = 5
+seasonality_shrinkage = 16.0
+tail_event_z = 2.5
+extreme_tod_shock_z = 4.0
+volume_dryness_z = -2.5
+tail_cluster_rate = 0.10
+vol_expansion_ratio = 1.5
+impact_stress_ratio = 2.5
+candidate_risk_gates_enabled = false
+
+[roots.HO]
+name = "NY Harbor ULSD"
+ticker_template = "{root}{month_code}{y} Comdty"
+generic_template = "{root}{rank} Comdty"
+native_unit = "USD/gal"
+price_to_usd_bbl = 42.0
+contract_size_native = 42000.0
+contract_barrels = 1000.0
+tick_size_native = 0.0001
+commission_per_contract_side = 2.50
+slippage_ticks_per_side = 1.0
+
+[roots.CL]
+name = "NYMEX WTI"
+ticker_template = "{root}{month_code}{y} Comdty"
+generic_template = "{root}{rank} Comdty"
+native_unit = "USD/bbl"
+price_to_usd_bbl = 1.0
+contract_size_native = 1000.0
+contract_barrels = 1000.0
+tick_size_native = 0.01
+commission_per_contract_side = 2.50
+slippage_ticks_per_side = 1.0
+
+[roots.CO]
+name = "ICE Brent"
+ticker_template = "{root}{month_code}{y} Comdty"
+generic_template = "{root}{rank} Comdty"
+native_unit = "USD/bbl"
+price_to_usd_bbl = 1.0
+contract_size_native = 1000.0
+contract_barrels = 1000.0
+tick_size_native = 0.01
+commission_per_contract_side = 2.50
+slippage_ticks_per_side = 1.0
+
+[roots.QS]
+name = "ICE Low Sulphur Gasoil"
+ticker_template = "{root}{month_code}{y} Comdty"
+generic_template = "{root}{rank} Comdty"
+native_unit = "USD/MT"
+price_to_usd_bbl = 0.1342281879194631
+contract_size_native = 100.0
+contract_barrels = 745.0
+tick_size_native = 0.25
+commission_per_contract_side = 2.50
+slippage_ticks_per_side = 1.0

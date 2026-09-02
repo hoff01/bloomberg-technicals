@@ -1,0 +1,23 @@
+.DS_Store
+.venv/
+.pytest_cache/
+**/__pycache__/
+*.py[cod]
+
+# User-local and generated runtime state
+logs/
+tmp/
+models/live/
+models/demo/
+data/technical/
+data/technical_demo/*.parquet
+data/pricing_history.csv
+
+# Rebuilt reports and large exports
+dist/
+
+# Optional model weights stay in the user-local Hugging Face cache
+*.safetensors
+*.bin
+*.pt
+*.pth
